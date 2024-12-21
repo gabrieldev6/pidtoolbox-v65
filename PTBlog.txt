@@ -1,0 +1,1426 @@
+
+PtbVersion =
+
+    'v0.65'
+
+
+CompType =
+
+    'PCWIN64'
+
+
+Matlab_Version =
+
+    '9.5.0.944444 (R2018b)'
+
+
+currentDate = 
+
+  datetime
+
+   2024-12-21
+
+
+defaults =
+
+  36x2 table
+
+           Parameters              Values   
+    _________________________    ___________
+
+    'firmware'                   '1'        
+    'LogViewer-SinglePanel'      '0'        
+    'LogViewer-plotR'            '1'        
+    'LogViewer-plotP'            '1'        
+    'LogViewer-plotY'            '1'        
+    'LogViewer-lineSmooth'       '1'        
+    'LogViewer-lineWidth'        '3'        
+    'LogViewer-Ymax'             '500'      
+    'spec2D-term1'               '1'        
+    'spec2D-term2'               '2'        
+    'spec2D-smoothing'           '3'        
+    'spec2D-delay'               '1'        
+    'spec2D-plotR'               '1'        
+    'spec2D-plotP'               '1'        
+    'spec2D-plotY'               '1'        
+    'spec2D-SinglePanel'         '0'        
+    'FreqXthr-Column1'           '3'        
+    'FreqXthr-Column2'           '2'        
+    'FreqXthr-Column3'           '8'        
+    'FreqXthr-Column4'           '7'        
+    'FreqXthr-Preset'            '1'        
+    'FreqXthr-Colormap'          '3'        
+    'FreqXthr-Smoothing'         '3'        
+    'FreqxTime-Preset'           '2'        
+    'FreqxTime-FreqSmoothing'    '2'        
+    'FreqxTime-TimeSmoothing'    '2'        
+    'FreqxTime-Colormap'         '3'        
+    'StepResp-plotR'             '1'        
+    'StepResp-plotP'             '1'        
+    'StepResp-plotY'             '1'        
+    'StepResp-SinglePanel'       '0'        
+    'StepResp-Ymax'              '1.75'     
+    'Font-name'                  'Helvetica'
+    'Font-size'                  '12'       
+    'Font-weight'                'normal'   
+    'Font-angle'                 'normal'   
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+          nCols_input: [1x1 struct]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+SPGyroDelay =
+
+     0
+
+
+SPGyroDelay =
+
+     0     0
+
+
+SPGyroDelay =
+
+     0     0     0
+
+
+h = 
+
+  Legend (Gyro | LOG00006.01.) with properties:
+
+         String: {'Gyro | LOG00006.01.'}
+       Location: 'southeast'
+    Orientation: 'vertical'
+       FontSize: 10.8000
+       Position: [0.3529 0.7011 0.0823 0.0259]
+          Units: 'normalized'
+
+  Use GET to show all properties
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+defaults =
+
+  36x2 table
+
+           Parameters              Values   
+    _________________________    ___________
+
+    'firmware'                   '1'        
+    'LogViewer-SinglePanel'      '0'        
+    'LogViewer-plotR'            '1'        
+    'LogViewer-plotP'            '1'        
+    'LogViewer-plotY'            '1'        
+    'LogViewer-lineSmooth'       '1'        
+    'LogViewer-lineWidth'        '3'        
+    'LogViewer-Ymax'             '500'      
+    'spec2D-term1'               '1'        
+    'spec2D-term2'               '2'        
+    'spec2D-smoothing'           '3'        
+    'spec2D-delay'               '1'        
+    'spec2D-plotR'               '1'        
+    'spec2D-plotP'               '1'        
+    'spec2D-plotY'               '1'        
+    'spec2D-SinglePanel'         '0'        
+    'FreqXthr-Column1'           '3'        
+    'FreqXthr-Column2'           '2'        
+    'FreqXthr-Column3'           '8'        
+    'FreqXthr-Column4'           '7'        
+    'FreqXthr-Preset'            '1'        
+    'FreqXthr-Colormap'          '3'        
+    'FreqXthr-Smoothing'         '3'        
+    'FreqxTime-Preset'           '2'        
+    'FreqxTime-FreqSmoothing'    '2'        
+    'FreqxTime-TimeSmoothing'    '2'        
+    'FreqxTime-Colormap'         '3'        
+    'StepResp-plotR'             '1'        
+    'StepResp-plotP'             '1'        
+    'StepResp-plotY'             '1'        
+    'StepResp-SinglePanel'       '0'        
+    'StepResp-Ymax'              '1.75'     
+    'Font-name'                  'Helvetica'
+    'Font-size'                  '12'       
+    'Font-weight'                'normal'   
+    'Font-angle'                 'normal'   
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+          nCols_input: [1x1 struct]
+               slider: [1x1 UIControl]
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+          nCols_input: [1x1 struct]
+               slider: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+guiHandlesSpec2 = 
+
+  struct with fields:
+
+            computeSpec: [1x1 UIControl]
+              resetSpec: [1x1 UIControl]
+            checkboxPSD: [1x1 UIControl]
+           RPYcomboSpec: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               saveFig2: [1x1 UIControl]
+          saveSettings2: [1x1 UIControl]
+               SpecList: [1x1 UIControl]
+             FileSelect: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+     spectrogramButton2: [1x1 UIControl]
+     spectrogramButton3: [1x1 UIControl]
+                  Delay: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+          climMax1_text: [1x1 UIControl]
+         climMax1_input: [1x1 UIControl]
+          climMax2_text: [1x1 UIControl]
+         climMax2_input: [1x1 UIControl]
+
+
+SPGyroDelay =
+
+     0
+
+
+SPGyroDelay =
+
+     0     0
+
+
+SPGyroDelay =
+
+     0     0     0
+
+
+SPGyroDelay =
+
+         0         0         0
+    5.5000         0         0
+
+
+SPGyroDelay =
+
+         0         0         0
+    5.5000         0         0
+
+
+h = 
+
+  Legend (Gyro | LOG00011.01.) with properties:
+
+         String: {'Gyro | LOG00011.01.'}
+       Location: 'southeast'
+    Orientation: 'vertical'
+       FontSize: 10.8000
+       Position: [0.3529 0.7011 0.0823 0.0259]
+          Units: 'normalized'
+
+  Use GET to show all properties
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesSpec = 
+
+  struct with fields:
+
+               specPresets: [1x1 UIControl]
+               computeSpec: [1x1 UIControl]
+                 resetSpec: [1x1 UIControl]
+                checkbox2d: [1x1 UIControl]
+               checkboxPSD: [1x1 UIControl]
+                    markup: [1x1 UIControl]
+    controlFreqCutoff_text: [1x1 UIControl]
+        controlFreq1Cutoff: [1x1 UIControl]
+        controlFreq2Cutoff: [1x1 UIControl]
+                  saveFig1: [1x1 UIControl]
+             saveSettings1: [1x1 UIControl]
+             Sub100HzCheck: {1x4 cell}
+                SpecSelect: {1x4 cell}
+                FileSelect: {1x4 cell}
+       smoothFactor_select: [1x1 UIControl]
+              climMax_text: [1x1 UIControl]
+             climMax_input: [1x1 UIControl]
+             climMax_text2: [1x1 UIControl]
+            climMax_input2: [1x1 UIControl]
+             climMax_text3: [1x1 UIControl]
+            climMax_input3: [1x1 UIControl]
+             climMax_text4: [1x1 UIControl]
+            climMax_input4: [1x1 UIControl]
+            ColormapSelect: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+defaults =
+
+  36x2 table
+
+           Parameters              Values   
+    _________________________    ___________
+
+    'firmware'                   '1'        
+    'LogViewer-SinglePanel'      '0'        
+    'LogViewer-plotR'            '1'        
+    'LogViewer-plotP'            '1'        
+    'LogViewer-plotY'            '1'        
+    'LogViewer-lineSmooth'       '1'        
+    'LogViewer-lineWidth'        '3'        
+    'LogViewer-Ymax'             '500'      
+    'spec2D-term1'               '1'        
+    'spec2D-term2'               '2'        
+    'spec2D-smoothing'           '3'        
+    'spec2D-delay'               '1'        
+    'spec2D-plotR'               '1'        
+    'spec2D-plotP'               '1'        
+    'spec2D-plotY'               '1'        
+    'spec2D-SinglePanel'         '0'        
+    'FreqXthr-Column1'           '3'        
+    'FreqXthr-Column2'           '2'        
+    'FreqXthr-Column3'           '8'        
+    'FreqXthr-Column4'           '7'        
+    'FreqXthr-Preset'            '1'        
+    'FreqXthr-Colormap'          '3'        
+    'FreqXthr-Smoothing'         '3'        
+    'FreqxTime-Preset'           '2'        
+    'FreqxTime-FreqSmoothing'    '2'        
+    'FreqxTime-TimeSmoothing'    '2'        
+    'FreqxTime-Colormap'         '3'        
+    'StepResp-plotR'             '1'        
+    'StepResp-plotP'             '1'        
+    'StepResp-plotY'             '1'        
+    'StepResp-SinglePanel'       '0'        
+    'StepResp-Ymax'              '1.75'     
+    'Font-name'                  'Helvetica'
+    'Font-size'                  '12'       
+    'Font-weight'                'normal'   
+    'Font-angle'                 'normal'   
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+          nCols_input: [1x1 struct]
+               slider: [1x1 UIControl]
+
+
+guiHandles = 
+
+  struct with fields:
+
+             Firmware: [1x1 UIControl]
+                fileA: [1x1 UIControl]
+                  clr: [1x1 UIControl]
+                plotR: [1x1 UIControl]
+                plotP: [1x1 UIControl]
+                plotY: [1x1 UIControl]
+           RPYcomboLV: [1x1 UIControl]
+       startEndButton: [1x1 UIControl]
+           lineSmooth: [1x1 UIControl]
+            linewidth: [1x1 UIControl]
+                 font: [1x1 UIControl]
+    spectrogramButton: [1x1 UIControl]
+         TuningButton: [1x1 UIControl]
+            period2Hz: [1x1 UIControl]
+               markup: [1x1 UIControl]
+             chgColor: [1x1 UIControl]
+       DispInfoButton: [1x1 UIControl]
+              saveFig: [1x1 UIControl]
+         saveSettings: [1x1 UIControl]
+     PIDtuningService: [1x1 UIControl]
+               runAll: [1x1 struct]
+            checkbox0: [1x1 UIControl]
+            checkbox1: [1x1 UIControl]
+            checkbox2: [1x1 UIControl]
+            checkbox3: [1x1 UIControl]
+            checkbox4: [1x1 UIControl]
+            checkbox5: [1x1 UIControl]
+            checkbox6: [1x1 UIControl]
+            checkbox7: [1x1 UIControl]
+            checkbox8: [1x1 UIControl]
+            checkbox9: [1x1 UIControl]
+           checkbox10: [1x1 UIControl]
+           checkbox11: [1x1 UIControl]
+           checkbox12: [1x1 UIControl]
+           checkbox13: [1x1 UIControl]
+           checkbox14: [1x1 UIControl]
+           checkbox15: [1x1 UIControl]
+              FileNum: [1x1 UIControl]
+            maxY_text: [1x1 UIControl]
+           maxY_input: [1x1 UIControl]
+          nCols_input: [1x1 struct]
+               slider: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
+
+guiHandlesTune = 
+
+  struct with fields:
+
+          tuneCrtlpanel: [1x1 Panel]
+                   run4: [1x1 UIControl]
+     fileListWindowStep: [1x1 UIControl]
+          PIDsliderTool: [1x1 UIControl]
+               saveFig4: [1x1 UIControl]
+           saveSettings: [1x1 UIControl]
+                  plotR: [1x1 UIControl]
+                  plotP: [1x1 UIControl]
+                  plotY: [1x1 UIControl]
+             clearPlots: [1x1 UIControl]
+            Ycorrection: [1x1 UIControl]
+                 markup: [1x1 UIControl]
+               RPYcombo: [1x1 UIControl]
+            maxYStepTxt: [1x1 UIControl]
+          maxYStepInput: [1x1 UIControl]
+                minResp: [1x1 UIControl]
+            minRespIput: [1x1 UIControl]
+                maxResp: [1x1 UIControl]
+            maxRespIput: [1x1 UIControl]
+    smoothFactor_select: [1x1 UIControl]
+
